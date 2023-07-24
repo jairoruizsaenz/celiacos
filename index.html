@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta charset="utf-8">
+    <title>GF en Bogotá</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="web development, django, data visualization, frontend, front end, front-end, developer" name="keywords">
+    <meta content="Looking for a web developer? Jairo is a developer pasionated about design, color and small details. Works with Django, HTML, CSS and more. Check his portfolio and projects." name="description">
+
+    <script>
+        function checkURL(section) {
+            // Some browsers include the hash character in the anchor, strip it out
+            var product = window.location.hash.replace(/^#(.*)/, '$1');
+            // Redirect to the new-style URL
+            var new_path = '/products';
+            console.log('section:', section)
+            console.log('product:', window.location.origin)
+            console.log('product:', window.location)
+            console.log('product:', product)
+            window.location = window.location.origin + '#' + section;
+        }
+    </script>
+
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>  
+
+    <!-- Favicon -->
+    <link href="../../static/img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../../static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../../static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="../../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- Template Stylesheet -->
+    <link href="../../static/css/style.css" rel="stylesheet">
+
+    <script type="text/javascript"> var submitted=false; </script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <!-- <div class="fa-3x">
+            <i class="fas fa-spinner fa-pulse" style="color: #6244C5;" role="status"></i>
+        </div> -->
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 fadeIn" data-wow-delay="0.1s" style="display: flex;">
+        <a href="https://jairo.digital/" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Jairo Ruiz Saenz</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <!-- <a href="#home" class="nav-item nav-link active">Home</a> -->
+                <!-- <a href="#about" class="nav-item nav-link">About</a> -->
+                <a href="javascript:checkURL('tech')" class="nav-item nav-link">Tech</a>
+                <a href="javascript:checkURL('skills')" class="nav-item nav-link">Skills</a>
+                <!-- <a href="#service" class="nav-item nav-link">Services</a> -->
+            </div>
+            <a href="https://jairo.digital/" class="navbar-brand py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Jairo Ruiz Saenz</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <!-- <a href="#project" class="nav-item nav-link">Projects</a> -->
+                <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
+                <a href="javascript:checkURL('projects')" class="nav-item nav-link">Projects</a>
+                <a href="javascript:checkURL('contact')" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-6 pb-5" id="project">
+        <div class="container">
+            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-12">
+                    <h1 class="display-5 mb-0">¿Qué es ser celíaca y que tiene que ver el glúten?</h1>
+                </div>
+            </div>
+            <div class="wow fadeInUp pb-3" data-wow-delay="0.15s">
+
+                <!-- <div class="row pb-3">
+                    <div class="col-10 mx-auto">
+                        <img class="img-fluid" src="resources/img/home.png" alt="Home view of app" loading="lazy">
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-12">
+                        <p>The Colombian Ministry of Information and Communication Technologies (MinTIC) initiated the <i>Data Science for All - DS4A</i> program to improve the data analysis capabilities of Colombians. The program's goal was to teach data science and machine learning techniques to participants.</p>
+
+                        <p>The DS4A program was an effective platform for improving Colombian citizens' data analysis skills and bridging the gap between academia and industry. Participants were able to gain practical experience and develop solutions to business challenges by working on actual projects. In order to complete the program, students were required to collaborate with a company to develop a project that addressed a real-world problem using data science and machine learning.</p>
+                        
+                        <!-- <div class="mx-auto pb-3">
+                            <img class="img-fluid" src="resources/img/descriptive.png" alt="Descriptive module of the web app" loading="lazy">
+                        </div> -->
+
+                        <p>Finally, recognizing the difficulty that time series models have in anticipating unexpected events that affect the price, we estimated and incorporated the corresponding impulse response functions from the SARIMAX model to simulate different types of shocks on their projections and apply them over all the projections.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mb-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-12">
+                    <h1 class="display-5 mb-5">Listado de restaurantes</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
+                        
+                            <div class="col">
+                                <div class="card blog-card h-100 wow fadeInUp" data-wow-delay="0.10s">
+                                    <img src="static/img/project-1.jpg" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Docokids</h4>
+                                        <div class="card-text">
+                                            <p class="project-category">Frontend</p>
+                                            <p class="mb-0">I led the development for Docokid's new website. I use HTML, CSS, JavaScript, and Bootstrap for the frontend. Additionally, I incorporated graphics and styling that align with the company's brand image. Additionally, I provided support for the backend development utilizing Django framework.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-white py-0">
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="https://docokids.com/" target="_blank">Visit Docokid's Website<i class="fa fa-eye ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card blog-card h-100 wow fadeInUp" data-wow-delay="0.2s">
+                                    <img src="static/img/project-6.png" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Analysis of patient readmissions to the ER</h4>
+                                        <div class="card-text">
+                                            <p class="project-category">Data Visualization | Machine Learning</p>
+                                            <p class="mb-0">We developed a tool that uses data visualization to measure and monitor patient readmissions. Using data from medical records and a random forest model, it allows the identification of risk factors and supports evidence-based decision-making.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-white py-0">
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="https://github.com/jairoruizsaenz/jairoruizsaenz.github.io/raw/master/static/files/Prototype%20patient%20re-admissions%20analysis%20at%20the%20Central%20Military%20Hospital.pdf" target="_blank">Download slides (Spanish)<i class="fas fa-file-download ms-2"></i></a>                                
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card blog-card h-100 wow fadeInUp" data-wow-delay="0.3s">
+                                    <img src="static/img/Peliculas.gif" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Relationships between Movies, Actors and Directors</h4>
+                                        <div class="card-text">
+                                            <p class="project-category">Data Visualization</p>
+                                            <p>This project is a data visualization chart that I developed using D3.js, HTML, and CSS. By using a force-directed graph, I was able to represent the relationships between movies, actors, and directors.</p>
+                                            <p class="mb-0" style="font-size: 80%;">
+                                                * The visualization may not display properly on mobile devices. I suggest accessing it using a computer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-white py-0">
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="/projects/movies_dataviz/">Interact with the visualization<i class="fa fa-eye ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card blog-card h-100 wow fadeInUp" data-wow-delay="0.4s">
+                                    <img src="static/img/nube_quijote.png" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h4 class="card-title">ConTexto</h4>
+                                        <div class="card-text">
+                                            <p class="project-category">Python Library</p>
+                                            <p class="mb-0">I had the opportunity to participate in the development of a Python library aimed at simplifying the application of Natural Language Processing techniques for texts in spanish.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-white py-0">
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="https://ucd-dnp.github.io/ConTexto/versiones/master/index.html" target="_blank">Documentation<i class="fa fa-eye ms-2"></i></a>
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="https://github.com/ucd-dnp/contexto" target="_blank">GitHub<i class="fab fa-github ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card blog-card h-100 wow fadeInUp" data-wow-delay="0.5s">
+                                    <img src="static/img/reporte-leila.png" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h4 class="card-title">LEILA</h4>
+                                        <div class="card-text">
+                                            <p class="project-category">Python Library</p>
+                                            <p class="mb-0">I had the opportunity to participate in the development of a Python library that simplifies the verification of the content of dataframes and delivers data quality metrics through a downloadable HTML report.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-white py-0">
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="https://ucd-dnp.github.io/leila/versiones/master/index.html" target="_blank">Documentation<i class="fa fa-eye ms-2"></i></a>
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="https://github.com/ucd-dnp/leila" target="_blank">GitHub<i class="fab fa-github ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card blog-card h-100 wow fadeInUp" data-wow-delay="0.6s">
+                                    <img src="static/img/project-5.jpg" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Use of SVM for the evaluation of spirometry test quality</h4>
+                                        <div class="card-text">
+                                            <p class="project-category">Machine Learning</p>
+                                            <p class="mb-0">A Support Vector Machine model was implemented to classify the quality of spirometry tests at a Colombian medical foundation, allowing for an efficient identification of tests that need to be repeated.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-white py-0">                                        
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="https://github.com/jairoruizsaenz/jairoruizsaenz.github.io/raw/master/static/files/Use%20of%20Support%20Vector%20Machine%20for%20the%20evaluation%20of%20spirometry%20test%20quality.pdf" target="_blank">Download report (Spanish)<i class="fas fa-file-download ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card blog-card h-100 wow fadeInUp" data-wow-delay="0.7s">
+                                    <img src="static/img/DS4A.png" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Forcasting of the energy price</h4>
+                                        <div class="card-text">
+                                            <p class="project-category">Machine Learning</p>
+                                            <p>For our final project in the <i>Data Science for All</i> program, we utilized machine learning models to create an app with Dash capable of predicting the Kilowatt/hour price in the Colombian Energy Market.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-white py-0">
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="/projects/ds4a/">More info<i class="fa fa-eye ms-2"></i></a>
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="https://github.com/jairoruizsaenz/DS4A_Team88" target="_blank">GitHub<i class="fab fa-github ms-2"></i></a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card blog-card h-100 wow fadeInUp" data-wow-delay="0.8s">
+                                    <img src="static/img/project-7.jpg" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h4 class="card-title">InGame</h4>
+                                        <div class="card-text">
+                                            <p class="project-category">Videogame development</p>
+                                            <p>I participated as a developer in a small video game project, the objective of which was to test a proof of concept. The project utilized Unity as the game engine and the code was written in C#.</p>
+                                            <p class="mb-0" style="font-size: 80%;">
+                                                * The demo app may not work in latest cellphones.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer border-0 bg-white py-0">
+                                        <a style="float:left;" class="btn btn-lg-square btn-xl-square btn-outline-project" href="https://github.com/jairoruizsaenz/jairoruizsaenz.github.io/raw/master/static/files/InGame%20Demo.apk?raw=true" target="_blank">Download Android Installer<i class="fas fa-file-download ms-2"></i></a>                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card blog-card h-100 wow fadeInUp" data-wow-delay="0.9s">
+                                    <img src="static/img/project-6.jpg" class="card-img-top" loading="lazy">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Hardware</h4>
+                                        <div class="card-text">
+                                            <p class="project-category">Electronics</p>
+                                            <p class="mb-0">While in undergraduate school I took several courses related to circuits. I am comfortable working with devices such as the Raspberry Pi and circuits.</p>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <a class="border-bottom text-secondary" href="#">Jairo Ruiz Saenz</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <a href="https://github.com/jairoruizsaenz" style="color:white;"><i class="fab fa-github fa-2x mx-3"></i></a>
+                        <a href="https://www.linkedin.com/in/jairoruizsaenz/" style="color:white;"><i class="fab fa-linkedin-in fa-2x mx-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../static/lib/wow/wow.min.js"></script>
+    <script src="../../static/lib/easing/easing.min.js"></script>
+    <script src="../../static/lib/waypoints/waypoints.min.js"></script>
+    <script src="../../static/lib/typed/typed.min.js"></script>
+    <script src="../../static/lib/counterup/counterup.min.js"></script>
+    <script src="../../static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../../static/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="../../static/lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../static/js/main_static_navbar.js"></script>
+
+    
+
+</body>
+
+</html>
