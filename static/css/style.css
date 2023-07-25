@@ -625,3 +625,21 @@
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::: */
+
+.main-container {
+    width: 100%;
+    /* max-width: 800px; Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+  
+.text-content {
+    float: left; /* Float the text-content to the left */
+    width: 50%; /* Set the width of the text-content to 50% of the container */
+    padding: 10px; /* Optional: Add some padding for spacing */
+}
+  
+.img-on-left {
+    float: left; /* Float the image to the left */
+    width: 50%; /* Set the width of the image to 50% of the container */    
+    padding: 10px; /* Optional: Add some padding for spacing */
+}
