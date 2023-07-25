@@ -643,3 +643,37 @@
     width: 50%; /* Set the width of the image to 50% of the container */    
     padding: 10px; /* Optional: Add some padding for spacing */
 }
+
+.ul-custom-list li::before {
+    content: "\2022";
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--primary);
+    margin-left: 18px;
+    margin-right: 12px;
+}
+
+  
+  
+blockquote {
+    background: #eeeaff;
+    border-left: 10px solid var(--primary);
+    margin: 1.1em 10px;
+    padding: 0.5em 10px;
+}
+
+blockquote:before {
+    color: #ccc;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+blockquote {
+    font-size: 1.6em;
+}
