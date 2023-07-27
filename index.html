@@ -110,9 +110,52 @@
     </nav>
     <!-- Navbar End -->
 
-    <!-- Projects Start -->
+    <!-- Project Start -->
     <div class="container-xxl py-6 pt-6 pb-5" id="project">
         <div class="container">
+       
+            <!-- Modal Start -->
+            <div class="modal fade" id="disclaimerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <!-- <div class="modal-header"> -->
+                            <!-- <h1 class="modal-title fs-5" id="disclaimerModalLabel">Modal title</h1> -->
+                            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- </div> -->
+                        <div class="modal-body">
+
+                            <div class="modal-footer text-center d-flex justify-content-center border-0">
+                                <img src="static/img/logo_OG.png" style="max-width:250px;">
+                                <h1 class="modal-title fs-5 purple-font" id="disclaimerModalLabel">Aviso Legal y Derechos de Autor</h1>
+                            </div>
+                            
+                            <p>
+                                Bienvenido a Celiacos Felices. Queremos compartir nuestras experiencias culinarias como celiacos contigo, pero antes de continuar, es importante que conozcas nuestras políticas.
+                            </p>
+                            
+                            <p>
+                                <span class="purple-font" style="font-weight:700;">Descargo de responsabilidad:</span> Las experiencias que compartimos son subjetivas y no garantizamos que los productos mencionados estén libres de gluten. No pretendemos diagnosticar o tratar enfermedades. Por favor, lee el <a class="border-bottom text-primary" href="https://celiacos.jairo.digital/descargo_de_responsabilidad">Descargo de responsabilidad</a> para más información.
+                            </p>
+
+                            <p>
+                                <span class="purple-font" style="font-weight:700;">Derechos de Autor:</span> Respetamos los derechos de autor y valoramos la propiedad intelectual. Si eres el propietario legítimo de alguna imagen o contenido utilizado en este sitio y no has dado tu consentimiento, por favor, contáctanos para resolverlo.
+                            </p>
+                                
+                            <p>
+                                Gracias por tu comprensión y disfruta de nuestro contenido de manera responsable.</p>
+                            </p>
+                        </div>
+                        
+                        <div class="modal-footer text-center d-flex justify-content-center">
+                            <span style="font-size:75%">Al hacer clic en 'Continuar' o al seguir explorando nuestro sitio, usted manifiesta que ha leído y comprendido el contenido del <a class="border-bottom text-primary" href="https://celiacos.jairo.digital/descargo_de_responsabilidad">Descargo de responsabilidad</a> y el aviso de <a class="border-bottom text-primary" href="https://celiacos.jairo.digital/derechos_de_autor">Derechos de Autor</a>.</span>
+                            <button type="button" class="btn btn-primary px-4 my-4" data-bs-dismiss="modal">Continuar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal End -->
+            <!-- NOTE: DELETE -->
+
             <div class="row g-5 mb-3 align-items-center wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-12">
                     <h2 class="display-6 purple-font">¿Qué es ser celíaca y qué tiene que ver el glúten?</h2>
@@ -410,7 +453,7 @@
 
         </div>
     </div>
-    <!-- Projects End -->
+    <!-- Project End -->
 
     <!-- Copyright Start -->
     <div class="container-fluid bg-dark text-white py-4">
@@ -497,6 +540,13 @@
         // Shuffle the cards inside the container, excluding the special card, and set data-wow-delay values
         shuffleCards(cardContainer, specialCardClass);
         });
+    </script>
+
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById("disclaimerModal"), {});
+        document.onreadystatechange = function () {
+            myModal.show();
+        };
     </script>
 
 </body>
